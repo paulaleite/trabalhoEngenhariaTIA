@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TIA</title>
+        <link rel = "stylesheet" type = "text/css" href = "index.css">
+    </head>
+
+    <script>
+        function validateForm() {
+            var numMatricula = document.form["formTIA"]["numTIA"].value;
+            var sizeNumMatricula = document.getElementById("numTIA").size;
+            if (sizeNumMatricula > 8) {
+                alert("Número de Matrícula Inválido");
+                return false;
+            } else {
+              return true;
+            }
+        }
+    </script>
+
+    <body>
+        <h1>Mackenzie</h1>
+        <form name = "formTIA" action = "" onsubmit = "return validateForm()">
+            <input type = "number" id = "numTIA" name = "numTIA" placeholder = "NÚMERO DE MATRÍCULA"><br><br>
+            <input type = "password" id = "passwordTIA" name = "passwordTIA" placeholder = "SENHA"><br><br>
+            <input list = "local" placeholder = "LOCAL">
+            <datalist id = "local">
+                <option value = "Selecione uma unidade">
+                <option value = "Local1">
+                <option value = "Local1">
+                <option value = "Local1">
+                <option value = "Local1">
+                <option value = "Local1">
+                <option value = "Local1">
+                <option value = "Local1">
+                <option value = "Local1">
+                <option value = "Local1">
+                <option value = "Local1">
+                <option value = "Local1">
+                <option value = "Local1">
+                <option value = "Local1">
+                <option value = "Local1">
+            </datalist>
+            <br><br>
+            <input type = "submit">
+        </form>
+
+    </body>
+</html>
